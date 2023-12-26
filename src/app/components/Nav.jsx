@@ -45,7 +45,7 @@ const Nav = () => {
             {/* <Popup trigger={<button className='modal-button'>Connect</button>} position="right center" modal>
             <div className='popup'>Coming Soon!!</div>
             </Popup> */}
-            <MainButton href='https://app.wingriders.com/swap/ada/2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749/constantProduct' text='Book Now' />
+            <MainButton href='' secondary text='Book Now' />
         </div>
 
     </NavBar>
@@ -128,7 +128,6 @@ const NavBar = styled.nav`
             display: inline-block;
             width: 70%;
             text-align: center;
-            visibility: hidden;
         }
     }
     .navlist {
