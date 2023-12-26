@@ -25,7 +25,7 @@ const Nav = () => {
             <li><a href='#services'>Services</a></li>
             <li><a href='#unveil' >Unveil</a></li>
         </ul>
-        <MainButton secondary target='onTab' className='modal-button' href='https://app.wingriders.com/swap/ada/2d587111358801114f04df83dc0015de0a740b462b75cce5170fc935434749/constantProduct' text='Book Now' />
+        <MainButton secondary target='onTab' className='modal-button' href='' text='Book Now' />
         
         <CgMenu onClick={toggleNav} className='menu-button' id='menu' size='4rem' />
         
