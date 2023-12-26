@@ -1,95 +1,57 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client"
+import { useEffect } from 'react'
+import Nav from './components/Nav'
+import HeroSection from './layouts/HeroSection'
+import Moment from './layouts/Moment'
+import FlexSection from './layouts/FlexSection'
+import Footer from './layouts/Footer'
+import TransformSection from './layouts/TransformSection'
+import UnveilSection from './layouts/UnveilSection'
+import Services from './layouts/Services'
+import CarouselSection from './layouts/CarouselSection'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, [])
+  
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <main>
+      <Nav />
+      <HeroSection />
+      {/* <section>
+        <div className="container">
+          <div className="row">
+            Photography
+          </div>
+          <div className="row">
+            Emotion
+          </div>
+          <div className="row">
+            Capture
+          </div>
+          <div className="row">
+            Moment
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      
+      
+      */}
+      <Moment />
+      <CarouselSection />
+      <Services />
+      <FlexSection title={'Painting with Light and Emotion'} text={'Where every photograph is carefully crafted masterpiece that captures the essence of moments through the interplay of light, shadow and raw emotions'} imgSrc={'/images/flex.jpg'} imgAlt={'hero image'} />
+      <FlexSection title={'Exploring the Art of Photography'} text={'A creative sanctuary where the boundless world of visual storytelling comes to life. With an unwavering passion for capturing moments that transcend the ordinary.'} imgSrc={'/images/flex2.jpg'} imgAlt={'hero image'} alternate/>
+      <UnveilSection />
+      <TransformSection/>
     </main>
+    <Footer />
+    </>
   )
 }
