@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <FooterCont>
         <div  className='footer-main'>
-            <div>
+            <div data-aos='fade-right'>
                 <div className="logo-cont">
                     <Image src='/images/logo.png' fill={true} alt=' ' />
                 </div>
@@ -16,7 +16,7 @@ const Footer = () => {
                     Welcome to Dat Captures, where we believe that every moment holds a story worth capturing.
                 </p>
             </div>
-            <ul>
+            <ul data-aos='fade-left'>
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Gallery</li>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <li>Contact Us</li>
             </ul>
         </div>
-        <div className="copy">
+        <div className="copy" data-aos='fade-down' data-aos-offset='0'>
             <span>&copy; DAT Captures. All rights Reserved.</span>
             <ul>
                 <li>
