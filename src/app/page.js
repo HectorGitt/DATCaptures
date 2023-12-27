@@ -15,7 +15,9 @@ import 'aos/dist/aos.css';
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      offset: 200,
+    });
     AOS.refresh();
   }, [])
   
