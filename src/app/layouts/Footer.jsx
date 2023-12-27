@@ -25,7 +25,7 @@ const Footer = () => {
                 <li>Contact Us</li>
             </ul>
         </div>
-        <div className="copy" data-aos='fade-down' data-aos-offset='0'>
+        <div className="copy" data-aos='fade-down' data-aos-offset='-100'>
             <span>&copy; DAT Captures. All rights Reserved.</span>
             <ul>
                 <li>
