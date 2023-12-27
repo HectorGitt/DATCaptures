@@ -17,7 +17,7 @@ const UnveilSection = () => {
           </p>
           <MainButton text='Book Now' href='/book' />
         </div>
-        <Image className='tilt-right' src='/images/showcase2.jpg' dataAos='fade-down-left' width={160} height={200} alt=' ' />
+        <Image className='tilt-right' src='/images/showcase2.jpg' data-aos='fade-down-left' width={160} height={200} alt=' ' />
       </div>
     </Unveil>
   )
@@ -29,7 +29,8 @@ const Unveil = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
+  margin: 4rem 0;  
   text-align: center;
   h1 {
     font-size: 5rem;
