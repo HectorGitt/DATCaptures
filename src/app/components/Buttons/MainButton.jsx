@@ -4,7 +4,7 @@ import { styled } from 'styled-components'
 
 const MainButton = (props) => {
   return (
-    <Button data-aos={props.dataAos} href={props.href} target={props.target? '': '__blank'} className={`action-button ${props.secondary? 'secondary': 'primary'} `} >
+    <Button data-aos-offset={props.dataAosOffset} data-aos={props.dataAos} /* href={props.href} */ href='https://wa.me/+2348115914142' target={props.target? '': '__blank'} className={`action-button ${props.secondary? 'secondary': 'primary'} `} >
         {props.text}
     </Button>
   )
