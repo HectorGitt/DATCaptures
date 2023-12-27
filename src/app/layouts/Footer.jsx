@@ -26,7 +26,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="copy">
-            <span>&copy; DAT Photo. All rights Reserved.</span>
+            <span>&copy; DAT Captures. All rights Reserved.</span>
             <ul>
                 <li>
                     <i className='fab fa-facebook-f'></i>
