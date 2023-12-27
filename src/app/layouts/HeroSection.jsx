@@ -12,7 +12,7 @@ const HeroSection = () => {
                 Capture Your {" "}
                 <ReactTyped strings={["Sweet Experiences","Every Moments"]} typeSpeed={100} loop />    
             </h1>
-            <MainButton dataAos='zoom-in' text='Book Now' href='/book' />
+            <MainButton dataAos='zoom-in' dataAosOffset='0' text='Book Now' href='/book' />
         </div>
     </Hero>
   )
@@ -50,7 +50,7 @@ const Hero = styled.div`
             margin-bottom: 1rem;
             max-width: 35rem;
             text-shadow: 1px 1px 1px #000000;
-            min-height: 8rem;
+            min-height: 12rem;
         }
     }
 
@@ -58,6 +58,7 @@ const Hero = styled.div`
         .hero-content {
             h1 {
                 font-size: 2.4rem;
+                min-height: 7.5rem;
             }
         }
     }
