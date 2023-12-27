@@ -42,11 +42,8 @@ const CarouselSection = () => {
 export default CarouselSection
 
 const CarouselCont = styled.div`
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction:column;
+    min-height: 80vh;
+    margin-top: 10rem;
     h1 {
         text-align: center;
         margin: 2rem 0;
