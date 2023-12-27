@@ -19,8 +19,9 @@ export default TransformSection
 
 const Transform = styled.div`
   display: flex;
-  min-height: 80vh;
+  min-height: 100vh;
   justify-content: center;
+  margin-bottom: 4rem;
   & > div {
     display: flex;
     flex-direction: column;

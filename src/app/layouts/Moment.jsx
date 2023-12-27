@@ -29,10 +29,11 @@ const MomentCont = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr ;
     padding: 0 4rem;
-    
+    margin: 4rem 0;
     h1 {
         grid-row:1/3 ;
         font-size: 5rem;
+        margin-bottom: 2rem;
     }
     .grid {
         display: flex;
@@ -60,7 +61,6 @@ const MomentCont = styled.div`
         height: auto;
     }
     @media screen and (max-width: 1000px) {
-        
         .grid {
             flex-direction: column;
         }
@@ -71,7 +71,8 @@ const MomentCont = styled.div`
     }
 
     @media screen and (${device.md}) {
-        margin: 0 10px;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
         padding: 0;
         

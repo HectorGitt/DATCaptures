@@ -30,6 +30,7 @@ export default Services
 
 const ServicesCont = styled.section`
     padding: 0 2rem;
+    margin: 4rem 0;
     .grid {
         display: flex;
         flex-wrap: wrap;
